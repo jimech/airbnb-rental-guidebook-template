@@ -1,0 +1,7 @@
+{
+  "name": "Hacienda Pinilla Luxury Guidebook",
+  "description": "A premium digital guidebook for a luxury villa in Hacienda Pinilla, Costa Rica, featuring house instructions and local recommendations.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
