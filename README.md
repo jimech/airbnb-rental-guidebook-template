@@ -7,11 +7,11 @@ A reusable, developer-friendly template for creating digital Airbnb guidebooks. 
 Pre-requisite: nodejs
 
 #### Install Dependencies
-```npm install
+``` npm install
 ```
 
 #### Running the project
-```npm run dev
+``` npm run dev
 ```
 
 ## Technologies Used
@@ -23,23 +23,24 @@ Pre-requisite: nodejs
 
 ## Structure
 
+```text
 casa-brisas-guide/
-├── public/                 # Static assets (Not processed by the code)
-│   └── assets/             # Place your high-quality videos and house photos here
+├── public/                 # Static assets (not processed by the code)
+│   └── assets/             # High-quality videos and house photos
 ├── src/                    # Main source code
-│   ├── components.tsx      # The "UI Library" (Navbar, Hero, Cards)
-│   ├── constants.ts        # The "Database" (All your text and data lives here)
-│   ├── MapView.tsx         # The "Map Engine" (Logic for the interactive map)
-│   ├── App.tsx             # The "Brain" (Routing and Page Layouts)
-│   ├── index.css           # Global styles and Tailwind configuration
+│   ├── components.tsx      # UI library (Navbar, Hero, Cards)
+│   ├── constants.ts        # Data layer (all text and content)
+│   ├── MapView.tsx         # Interactive map logic
+│   ├── App.tsx             # Routing and page layouts
+│   ├── index.css           # Global styles and Tailwind config
 │   └── lib/                # Utility functions
-│       └── utils.ts        # Helper for merging CSS classes (cn function)
+│       └── utils.ts        # Helper for merging CSS classes (cn)
 ├── package.json            # Project dependencies (Framer Motion, Lucide, etc.)
 └── tsconfig.json           # TypeScript configuration
 
-# 📂 Detailed File Breakdown
+## Detailed File Breakdown
 
-## 1. `src/constants.ts` (The Data)
+### 1. `src/constants.ts` (The Data)
 
 **Purpose:**  
 Acts as your content management system. Stores all hard-coded text, image URLs, coordinates, and lists.
@@ -52,7 +53,7 @@ Acts as your content management system. Stores all hard-coded text, image URLs, 
 
 ---
 
-## 2. `src/App.tsx` (The Pages)
+### 2. `src/App.tsx` (The Pages)
 
 **Purpose:**  
 Handles navigation (routing) and layout of the different pages.
@@ -65,7 +66,7 @@ Handles navigation (routing) and layout of the different pages.
 
 ---
 
-## 3. `src/components.tsx` (The Design)
+### 3. `src/components.tsx` (The Design)
 
 **Purpose:**  
 Contains reusable UI building blocks.
@@ -78,7 +79,7 @@ Contains reusable UI building blocks.
 
 ---
 
-## 4. `src/MapView.tsx` (The Interactive Map)
+### 4. `src/MapView.tsx` (The Interactive Map)
 
 **Purpose:**  
 Handles map integration (e.g. Leaflet or Mapbox).
@@ -90,9 +91,9 @@ Handles map integration (e.g. Leaflet or Mapbox).
 
 ---
 
-# 🛠 How to Customize Your Guide
+## 🛠 How to Customize Your Guide
 
-## Change a Photo or Video
+### Change a Photo or Video
 
 1. Add your file to: src/assets
 
@@ -104,7 +105,7 @@ Handles map integration (e.g. Leaflet or Mapbox).
 src="/assets/your-new-video.mp4" 
 ```
 
-## Add a New Restaurant
+### Add a New Restaurant
 1. Open src/constants.ts
 2. Find the RECOMMENDATIONS array
 3. Copy an existing item and update:
